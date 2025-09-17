@@ -59,25 +59,88 @@ int main()
 
     // cout << "Area of rectangle = " << height << " * " << width << " = " << height * width << endl;
 
-    // TODO:  #17
-    float height, base;
-    cout << "enter height" << endl;
-    cin >> height;
+    // Done:  #17
+    // float height, base;
+    // cout << "enter height" << endl;
+    // cin >> height;
 
-    cout << "enter base" << endl;
-    cin >> base;
+    // cout << "enter base" << endl;
+    // cin >> base;
 
-    cout << "Area of triangle =  ( " << base << " * " << height << " ) / 2 = " << (base  * height)/2 << endl;
+    // cout << "Area of triangle =  ( " << base << " * " << height << " ) / 2 = " << (base * height) / 2 << endl;
 
+    // Done:  #19
+    // const float PI = 3.14159265;
+    // float diameter;
 
+    // cout << "enter diameter" << endl;
+    // cin >> diameter;
 
-    // TODO:  #19
-    // TODO:  #20
-    // TODO:  #21
-    // TODO:  #22
-    // TODO:  #31
+    // cout << "Area of Circle =  ( PI " << " * (" <<  diameter << " * " << diameter << ") ) / 4 = " << (PI * (diameter * diameter) )/ 4 << endl;
+
+    // Done:  #20
+    // const float PI = 3.14159265;
+    // float area_of_square_around_circle;
+
+    // cout << "enter area of square around circle" << endl;
+    // cin >> area_of_square_around_circle;
+
+    // cout << "Area of Circle =  ( PI " << " * (" <<  area_of_square_around_circle << " * " << area_of_square_around_circle << ") ) / 4 = " << (PI * (area_of_square_around_circle * area_of_square_around_circle) )/ 4 << endl;
+
+    // Done:  #21
+    // const float PI = 3.14159265;
+    // float radius;
+
+    // cout << "enter radius of circle" << endl;
+    // cin >> radius;
+
+    // cout << "Area of Circle =   (" << radius << " * " << radius << ") / (" << PI << " * 4)  = " << (radius * radius) / (PI * 4) << endl;
+
+    // Done:  #22
+    // const float PI = 3.14159265;
+    // float a, b;
+
+    // cout << "enter the height of the two equal sides of isosceles triangle" << endl;
+    // cin >> a;
+
+    // cout << "enter the height of the unique side of isosceles triangle" << endl;
+    // cin >> b;
+
+    // cout << "Area of Circle =   (" << PI << " * (  (" << b << " * " << b << ") / 4 ) ) * ( ( 2 * " << a << " - " << b << ") / ( 2 * " << a << " + " << b << ")   )  = " << (PI * ((b * b) / 4)) * ((2 * a - b) / (2 * a + b)) << endl;
+
+    // Done:  #31
+    // int number,sum, counter;
+    
+    // cout << "enter the number";
+    // cin >> number;
+    // for (sum = 1,counter = 1; counter <= number; counter++)
+    // {
+
+    //     sum = sum * number;
+    //     cout << "hey this is the sum of the numbers " << sum << endl;
+    // };
+
     // TODO:  #35
-    // TODO:  #39
+
+    
+
+
+    // Done:  #39
+
+    // float totalBill,cashPaid;
+
+    // cout << "your bill is 58$ how much are you going to pay in cash?" << endl;
+    // totalBill = 58;
+    // cin >> cashPaid;
+
+    // if (cashPaid < totalBill) {
+    // cout << "your bill is 58$ the cash you gave is not enough its only "<< cashPaid << "\n\nplease pay the correct amount again"<< endl;
+    // cin >> cashPaid;
+
+    // }
+    // cout << "the remainder = " << cashPaid <<  "(Cash Paid) - "<< totalBill <<"(Total Bill) = " << cashPaid - totalBill << endl;
+
+
     // TODO:  #40
     // TODO:  #42
     // TODO:  #43
