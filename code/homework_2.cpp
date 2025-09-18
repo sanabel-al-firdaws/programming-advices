@@ -1,5 +1,5 @@
 #include <iostream>
-
+#include <cmath>
 using namespace std;
 int main()
 {
@@ -110,7 +110,7 @@ int main()
 
     // Done:  #31
     // int number,sum, counter;
-    
+
     // cout << "enter the number";
     // cin >> number;
     // for (sum = 1,counter = 1; counter <= number; counter++)
@@ -120,10 +120,27 @@ int main()
     //     cout << "hey this is the sum of the numbers " << sum << endl;
     // };
 
-    // TODO:  #35
+    // Done:  #35
+    // float pennies, nickles, dimes, quarters, dollars, totalPennies;
 
-    
+    // cout << "enter pennies" << endl;
+    // cin >> pennies;
 
+    // cout << "enter nickles" << endl;
+    // cin >> nickles;
+
+    // cout << "enter dimes" << endl;
+    // cin >> dimes;
+
+    // cout << "enter quarters" << endl;
+    // cin >> quarters;
+
+    // cout << "enter dollars" << endl;
+    // cin >> dollars;
+
+    // totalPennies = pennies + nickles * 5 + dimes * 10 + quarters * 25 + dollars * 100;
+
+    // cout << "Total Dollars: " << totalPennies * 0.01 << endl;
 
     // Done:  #39
 
@@ -140,12 +157,90 @@ int main()
     // }
     // cout << "the remainder = " << cashPaid <<  "(Cash Paid) - "<< totalBill <<"(Total Bill) = " << cashPaid - totalBill << endl;
 
+    // Done:  #40
 
-    // TODO:  #40
-    // TODO:  #42
-    // TODO:  #43
-    // TODO:  #47
-    // TODO:  #48
+    // float fee, tax, billValue;
+
+    // cout << "how much was your bill ?" << endl;
+    // cin >> billValue;
+    // tax = 0.16 * billValue;
+    // fee = 0.10 * billValue;
+
+    // cout << "your bill is " << billValue<<"\n + " << tax << "(tax) + " << fee << " (fee) " <<"\n\n = "<< billValue + tax + fee << endl;
+
+    // Done:  #42
+    // unsigned int days, hours, minutes, seconds;
+
+    // cout << "how many days?" << endl;
+    // cin >> days;
+
+    // cout << "how many hours?" << endl;
+    // cin >> hours;
+
+    // cout << "how many minutes?" << endl;
+    // cin >> minutes;
+
+    // cout << "how many seconds?" << endl;
+    // cin >> seconds;
+
+    // cout << "Time = "
+    //      << days * 24 * 60 * 60 +
+    //             hours * 60 * 60 +
+    //             minutes * 60 +
+    //             seconds
+    //      << endl;
+
+    // Done:  #43
+    // int total_seconds, number_of_days, number_of_hours, number_of_minutes, number_of_seconds;
+    // float remainder;
+    // const int SecondsPerDay = 24 * 60 * 60, SecondsPerHour = 60 * 60, SecondsPerMinute = 60;
+    // cout << "how many seconds?" << endl;
+    // cin >> total_seconds;
+
+    // number_of_days = floor(total_seconds / SecondsPerDay);
+    // remainder = total_seconds % SecondsPerDay;
+
+    // number_of_hours = floor(remainder / SecondsPerHour);
+    // remainder = total_seconds % SecondsPerHour;
+
+    // number_of_minutes = floor(remainder / SecondsPerMinute);
+    // remainder = total_seconds % SecondsPerMinute;
+
+    // number_of_seconds = remainder;
+
+    // cout << endl
+    //      << "days :"<< number_of_days << endl
+    //      << "hours :"<<number_of_hours << endl
+    //      <<"minutes :"<< number_of_minutes << endl
+    //      <<"seconds :"<< number_of_seconds << endl
+    //      << endl;
+
+    // Done:  #47
+    // float loanAmount, monthlyPayments, months;
+
+    // cout << "how much is the loan amount?" << endl;
+    // cin >> loanAmount;
+
+    // cout << "how many you will pay each month?" << endl;
+    // cin >> monthlyPayments;
+
+    // months = loanAmount / monthlyPayments;
+
+    // cout << "it will take you " << ceil(months) << " months" << endl;
+
+    // Done:  #48
+
+    // float loanAmount, monthlyPayments, months;
+
+    // cout << "how much is the loan amount?" << endl;
+    // cin >> loanAmount;
+
+    // cout << "after how many months you want to pay for it?" << endl;
+    // cin >> months;
+
+    // monthlyPayments = loanAmount / months;
+
+    // cout << "you will pay " << monthlyPayments << "$ each month" << endl;
 
     return 0;
 }
