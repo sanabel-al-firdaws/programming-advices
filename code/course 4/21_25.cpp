@@ -2,69 +2,21 @@
 #include <cmath>
 using namespace std;
 
-//? #16
+//? #21
 
-// void ReadRectangle(float &side_area, float &diagonal)
+// float ReadCircumference()
 // {
-//     cout << "Enter the Side Area of The Rectangle " << endl;
+//     float circumference = 0;
+//     cout << "Enter the Circumference of the Circle" << endl;
 
-//     cin >> side_area;
-
-//     cout << "Enter the Diagonal of The Rectangle " << endl;
-
-//     cin >> diagonal;
-// }
-// float RectangleAreaBySideAndDiaognal(float side_area, float diagonal)
-// {
-//     float area = side_area * sqrt(pow(diagonal, 2) - pow(side_area, 2));
-//     return area;
-// }
-// void PrintRectangleArea(float area)
-// {
-//     cout << "The Area of Rectangle is " + to_string(area) << endl;
-// }
-//? #16
-
-//? #17
-
-// void ReadTriangle(float &base, float &height)
-// {
-//     cout << "Enter Side A of Triangle" << endl;
-
-//     cin >> base;
-
-//     cout << "Enter Line H of Triangle" << endl;
-
-//     cin >> height;
+//     cin >> circumference;
+//     return circumference;
 // }
 
-// float CalculateTriangleArea(float base, float height)
+// float CircleAreaByCircumference(float circumference)
 // {
-//     float area = (base / 2) * height;
-//     return area;
-// }
 
-// void PrintTriangleArea(float area)
-// {
-//     cout << "The Area of Triangle is " + to_string(area) << endl;
-// }
-
-//? #17
-
-//? #18
-
-// float ReadCircleRadius()
-// {
-//     float radius = 0;
-//     cout << "Enter the Radius of the Circle" << endl;
-
-//     cin >> radius;
-//     return radius;
-// }
-
-// float CalculateCircleAreaByRadius(float radius)
-// {
-//     float area = M_PI * pow(radius, 2);
+//     float area = pow(circumference, 2) / (M_PI * 4);
 //     return area;
 // }
 
@@ -73,22 +25,25 @@ using namespace std;
 //     cout << "The Area of Circle is " + to_string(area) << endl;
 // }
 
-//? #18
+//? #21
 
-//? #19
+//? #22
 
-// float ReadCircleDiameter()
+// void ReadIsocscelesTriangle(float &a, float &b)
 // {
-//     float diameter = 0;
-//     cout << "Enter the Diameter of the Circle" << endl;
+//     cout << "Enter the Side A of the Triangle" << endl;
 
-//     cin >> diameter;
-//     return diameter;
+//     cin >> a;
+
+//     cout << "Enter the Side B of the Triangle" << endl;
+
+//     cin >> b;
 // }
 
-// float CalculateCircleAreaByDiameter(float diameter)
+// float CircleAreaByTriangleSides(float a, float b)
 // {
-//     float area = (M_PI * pow(diameter, 2)) / 4;
+
+//     float area = M_PI * (pow(b, 2) / 4) * ((2 * a - b) / (2 * a + b));
 //     return area;
 // }
 
@@ -97,58 +52,137 @@ using namespace std;
 //     cout << "The Area of Circle is " + to_string(area) << endl;
 // }
 
-//? #19
+//? #22
 
-//? #20
+//? #23
 
-float ReadSqaureSide()
+// void ReadArbitraryTriangle(float &a, float &b, float &c)
+// {
+//     cout << "Enter the Point A of the Triangle" << endl;
+
+//     cin >> a;
+
+//     cout << "Enter the Point B of the Triangle" << endl;
+
+//     cin >> b;
+
+//     cout << "Enter the Point C of the Triangle" << endl;
+
+//     cin >> c;
+// }
+
+// float CircleAreaByInscripedTriangle(float a, float b, float c)
+// {
+//     float p = (a + b + c) / 2;
+//     float temp = (a * b * c) / (4 * sqrt(p * (p - a) * (p - b) * (p - c)));
+//     float area = M_PI * pow(temp, 2);
+//     return area;
+// }
+
+// void PrintCircleArea(float area)
+// {
+//     cout << "The Area of Circle is " + to_string(area) << endl;
+// }
+
+//? #23
+
+//? #24
+
+// float ReadAge()
+// {
+//     float age = 0;
+//     cout << "Enter your age" << endl;
+
+//     cin >> age;
+//     return age;
+// }
+
+// bool ValidateNumberInRange(int number, int from, int to)
+// {
+//     return (number >= from && number <= to);
+// }
+// void PrintResult(int age)
+// {
+//     if (ValidateNumberInRange(age, 18, 45))
+//     {
+//         cout << "your age is valid" << endl;
+//     }
+//     else
+//     {
+//         cout << "your age is invalid" << endl;
+//     }
+// }
+
+//? #24
+
+//? #25
+
+bool ValidateNumberInRange(int number, int from, int to)
 {
-    float square_side = 0;
-    cout << "Enter a Side of the Sqaure" << endl;
-
-    cin >> square_side;
-    return square_side;
+    return (number >= from && number <= to);
 }
 
-float CalculateCircleAreaInscripedInSquare(float squareArea)
+float ReadAge()
 {
+    float age = 0;
 
-    float area = (M_PI * pow(squareArea, 2)) / 4;
-    return area;
+    cout << "Enter your age" << endl;
+    cin >> age;
+
+    return age;
 }
 
-void PrintCircleArea(float area)
+float ReadUntilAgeBetween(int from, int to)
 {
-    cout << "The Area of Circle is " + to_string(area) << endl;
+    float age = ReadAge();
+
+    while (!ValidateNumberInRange(age, from, to))
+    {
+        string message = "You must be >= " + to_string(from) + " and <= " + to_string(to);
+        cout << message << endl;
+
+        age = ReadAge();
+    }
+
+    return age;
 }
 
-//? #20
+void PrintResult(int age)
+{
+    if (ValidateNumberInRange(age, 18, 45))
+    {
+        cout << "your age is valid" << endl;
+    }
+    else
+    {
+        cout << "your age is invalid" << endl;
+    }
+}
+
+//? #25
 
 int main()
 {
-    //? #16
 
-    // float side_area, diagonal;
-    // ReadRectangle(side_area, diagonal);
-    // PrintRectangleArea(RectangleAreaBySideAndDiaognal(side_area, diagonal));
+    //? #21
 
-    //? #17
+    // PrintCircleArea(CircleAreaByCircumference(ReadCircumference()));
 
-    // float base, height;
-    // ReadTriangle(base, height);
-    // PrintTriangleArea(CalculateTriangleArea(base, height));
+    //? #22
 
-    //? #18
+    // float a = 0, b = 0;
+    // ReadIsocscelesTriangle(a, b);
+    // PrintCircleArea(CircleAreaByTriangleSides(a, b));
 
-    // PrintCircleArea(CalculateCircleAreaByRadius(ReadCircleRadius()));
+    //? #23
+    // float a = 0, b = 0, c = 0;
+    // ReadArbitraryTriangle(a, b, c);
+    // PrintCircleArea(CircleAreaByInscripedTriangle(a, b, c));
 
-    //? #19
+    //? #24
+    PrintResult(ReadUntilAgeBetween(18, 45));
 
-    // PrintCircleArea(CalculateCircleAreaByDiameter(ReadCircleDiameter()));
-
-    //? #20
-
-    PrintCircleArea(CalculateCircleAreaInscripedInSquare(ReadSqaureSide()));
+    //? #25
 
     return 0;
 }
