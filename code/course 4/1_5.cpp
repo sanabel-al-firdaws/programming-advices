@@ -103,7 +103,7 @@ stInfo ReadInfo()
     cout << "Do you have a Driving License?" << endl;
     cin >> info.hasDrivingLicense;
 
-        cout << "Do you have a Recommendation?" << endl;
+    cout << "Do you have a Recommendation?" << endl;
 
     cin >> info.hasRecommendation;
 
